@@ -1,6 +1,5 @@
 package br.com.alura;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -50,6 +49,10 @@ public class Curso {
 	
 	public Set<Aluno> getAlunos() {
 		return Collections.unmodifiableSet(alunos);
+	}
+	
+	public boolean estaMatriculado(Aluno aluno) {
+		return this.alunos.contains(aluno);
 	}
 
 }
